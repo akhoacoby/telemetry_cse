@@ -19,7 +19,7 @@ jobs:
     # Hint: Use Linux type OS for lightweight and fast execution
     # The job will run inside a container of our choosing
     container:
-      image: ubuntu:20.04       # Options: returntocorp/semgrep | ubuntu:20.04 | alpine:latest
+      image: returntocorp/semgrep       # Options: returntocorp/semgrep | ubuntu:20.04 | alpine:latest
       # Hint: Using Semgrep's official container ensures all dependencies are ready
     # Step 4: Define the steps of our job
     steps:

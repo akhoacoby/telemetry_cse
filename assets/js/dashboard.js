@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const statusClass = (data.status || '').toLowerCase();
 
         // BEST PRACTICE: Do NOT use inner HTML with unsanitized data in applications.
-        alertBadge.innerHTML = data.alerts || 'No alerts';
+        alertBadge.textContent = data.alerts || 'No alerts';
         
         alertBadge.className = 'badge ' + (statusClass === 'critical' ? 'badge-danger' : statusClass === 'warning' ? 'badge-warning' : 'badge-success');
 
